@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/wsdl4j.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/saaj.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/orm.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/mysql.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/logger3.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/gwt-servlet.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/gwt-dev.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/gson-1.5.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/gson-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/gson-1.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/gson-1.4.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/encriptacion2.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/commons-logging.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/axis.jar"/>
+	<classpathentry kind="lib" path="/home/kron623/workspace2/lib/lib actualizado/annotations.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

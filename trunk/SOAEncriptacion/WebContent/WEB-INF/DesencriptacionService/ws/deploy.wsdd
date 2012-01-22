@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from DesencriptacionService WSDL service -->
+
+  <service name="Desencriptacion" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://ws"/>
+      <parameter name="wsdlServiceElement" value="DesencriptacionService"/>
+      <parameter name="schemaQualified" value="http://ws,http://orm.org"/>
+      <parameter name="wsdlServicePort" value="Desencriptacion"/>
+      <parameter name="className" value="ws.Desencriptacion"/>
+      <parameter name="wsdlPortType" value="Desencriptacion"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://ws" xmlns:retNS="http://ws" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="desencripta" qname="operNS:desencripta" returnQName="retNS:desencriptaReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://ws" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:clave" type="tns:string"/>
+        <fault xmlns:fns="http://ws" xmlns:tns="http://orm.org" name="PersistentException" qname="fns:fault" class="org.orm.PersistentException" type="tns:PersistentException"/>
+      </operation>
+      <parameter name="allowedMethods" value="desencripta"/>
+
+      <typeMapping xmlns:ns="http://orm.org" qname="ns:PersistentException" type="java:org.orm.PersistentException" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>

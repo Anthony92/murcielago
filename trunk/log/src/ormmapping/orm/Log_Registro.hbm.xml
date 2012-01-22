@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: Patricio Caceres
+License Type: Evaluation
+-->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="orm.Log_Registro" table="Log_Registro" lazy="false">
+		<meta attribute="class-description">
+			registro de acciones por el sistema
+		</meta>
+		<id name="reg_id_registro" column="reg_id_registro" type="integer" unsaved-value="0">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="reg_hora" column="reg_hora" type="string" length="6" not-null="false" lazy="false">
+			<meta attribute="field-description">
+				hora que el registro se ejecuto
+			</meta>
+		</property>
+		<property name="reg_parametro" column="reg_parametro" type="string" length="255" not-null="false" lazy="false">
+			<meta attribute="field-description">
+				par&#225;metro pasado a la funci&#243;n
+			</meta>
+		</property>
+		<property name="reg_resultado" column="reg_resultado" type="string" length="255" not-null="false" lazy="false">
+			<meta attribute="field-description">
+				valor retornado de la funcion
+			</meta>
+		</property>
+		<property name="reg_tiempo" column="reg_tiempo" type="string" length="255" not-null="false" lazy="false">
+			<meta attribute="field-description">
+				tiempo que se demoro en ejecutar el metodo
+			</meta>
+		</property>
+	</class>
+</hibernate-mapping>
